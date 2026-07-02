@@ -1,3 +1,4 @@
+<img width="681" height="578" alt="Screenshot 2026-07-02 214515" src="https://github.com/user-attachments/assets/b458299c-7ea0-451a-ba97-159817f09f71" />
 # password-strength-checker
 A responsive password strength checker built with HTML, CSS, and JavaScript that evaluates password security in real time based on common password complexity rules.
 # Password Strength Checker
