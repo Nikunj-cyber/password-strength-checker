@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Password Strength Checker</h1>
+      <p class="subtitle">Type a password to see how strong it is.</p>
+
+      <div class="input-row">
+        <label class="sr-only" for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter your password" autocomplete="off" />
+        <button id="toggle-visibility" class="icon-button" type="button" aria-pressed="false">Show</button>
+      </div>
+
+      <div class="actions">
+        <button id="copy-button" class="secondary-button" type="button" disabled>Copy</button>
+        <span id="copy-status" class="copy-status" aria-live="polite"></span>
+      </div>
+
+      <div class="meter" aria-hidden="true">
+        <div id="meter-fill" class="meter-fill"></div>
+      </div>
+
+      <p id="strength-text" class="strength-text">Enter a password</p>
+
+      <ul class="criteria-list">
+        <li data-check="length">At least 8 characters</li>
+        <li data-check="lowercase">Contains a lowercase letter</li>
+        <li data-check="uppercase">Contains an uppercase letter</li>
+        <li data-check="number">Contains a number</li>
+        <li data-check="special">Contains a special character</li>
+      </ul>
+    </main>
+
+    <script src="passwordStrength.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

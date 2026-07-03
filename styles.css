@@ -1,0 +1,135 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: #f8fafc;
+}
+
+.card {
+  width: min(92vw, 480px);
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin: 0 0 1rem;
+  color: #cbd5e1;
+}
+
+input {
+  flex: 1;
+  box-sizing: border-box;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  background: #020617;
+  color: #f8fafc;
+}
+
+.input-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.icon-button,
+.secondary-button {
+  border: 1px solid #475569;
+  border-radius: 0.75rem;
+  padding: 0.8rem 0.95rem;
+  font-size: 0.95rem;
+  background: #1e293b;
+  color: #f8fafc;
+  cursor: pointer;
+}
+
+.secondary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.copy-status {
+  min-height: 1.2rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.copy-status.success {
+  color: #86efac;
+}
+
+.copy-status.error {
+  color: #fda4af;
+}
+
+.meter {
+  margin-top: 1rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #334155;
+}
+
+.meter-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: #ef4444;
+  transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.strength-text {
+  margin: 0.75rem 0 1rem;
+  font-weight: 600;
+}
+
+.criteria-list {
+  padding-left: 1.2rem;
+  color: #cbd5e1;
+}
+
+.criteria-list li {
+  margin-bottom: 0.45rem;
+}
+
+.criteria-list li.passed {
+  color: #86efac;
+}
+
+.criteria-list li.failed {
+  color: #fda4af;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
